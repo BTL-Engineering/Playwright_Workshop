@@ -1,0 +1,23 @@
+{
+  "name": "playwright_workshop",
+  "version": "1.0.0",
+  "description": "Playwright Workshop prepared for the R&amp;D team",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "exercice1": "playwright test exercice1.spec.js --project=exercice1-2",
+    "exercice2": "playwright test exercice2.spec.js --project=exercice1-2",
+    "exercice3": "playwright test exercice3.spec.js --project=exercice3",
+    "exercice4": "playwright test exercice4.spec.js --project=exercice4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "otpauth": "^9.3.6"
+  }
+}
