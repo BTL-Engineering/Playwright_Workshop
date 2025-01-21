@@ -11,6 +11,7 @@ require('dotenv').config();
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
+  //timeout: 120000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -28,12 +29,22 @@ module.exports = defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    // 'off' dont record trace
+    // 'on' record trace for every test
+    // 'retain-on-failure' record trace for every test, but remove successful test run traces
+    // 'on-first-retry' record the trace only when you retry a test for the first time.
     trace: 'on-first-retry',
     /* Run the tests in headless mode. */
     headless: false,
+    screenshot: 'off',
+    //viewport: { width:2400, height:2000 },
+    // 'off' do not record video
+    // 'on' record video for every test
+    // 'retain-on-failure' record video for every test, but delete all videos of successful test runs.
+    // 'on-first-retry' record only when you retry a test for the first time.
+    video: 'off',
   },
   
-
   /* Configure projects for major browsers */
   projects: [
     {
@@ -93,4 +104,3 @@ module.exports = defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-
