@@ -12,7 +12,7 @@ require('dotenv').config();
  */
 module.exports = defineConfig({
   //timeout: 120000,
-  testDir: './tests',
+  //testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -64,6 +64,12 @@ module.exports = defineConfig({
     },
     {
       name: 'exercice4',
+    },
+    {
+      name: 'test-examples',
+      use: { 
+        ...devices['Desktop Chrome']
+       }
     }
 
     // {

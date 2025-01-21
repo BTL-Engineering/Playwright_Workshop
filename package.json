@@ -10,7 +10,9 @@
     "exercice1": "playwright test exercice1.spec.js --project=exercice1-2",
     "exercice2": "playwright test exercice2.spec.js --project=exercice1-2",
     "exercice3": "playwright test exercice3.spec.js --project=exercice3",
-    "exercice4": "playwright test exercice4.spec.js --project=exercice4"
+    "exercice4": "playwright test exercice4.spec.js --project=exercice4",
+    "exercice5": "playwright test exercice5.spec.js --project=exercice4",
+    "example":"playwright test demo-todo-app.spec.js --project=test-examples"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.1",
