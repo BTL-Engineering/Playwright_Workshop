@@ -8,12 +8,12 @@ test('Navigate to Skincare, select a product and check that Details contain text
 
   // Get the link of All skincare and click it
 
-  // Expect page heading to contain SKINCARE
+  // Expect page title to contain SKINCARE
 
 
   // Get the link of Power Infusing Concentrate and click it
 
-  // Expect page heading to contain Power infusing concentrate
+  // Expect page title to contain Power Infusing Concentrate
 
   // Expect Details to contain 'About 2 months (per recommended amount)' 
 

@@ -8,5 +8,5 @@ test('Navigate to Skincare', async ({ page }) => {
 
   // Get the link of All skincare and click it
 
-  // Expect page heading to contain SKINCARE
+  // Expect page title to contain SKINCARE
 });

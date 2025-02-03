@@ -14,7 +14,7 @@
     "exercice5": "playwright test exercice5.spec.js --project=chrome-auth",
     "exercice6": "playwright test exercice6.spec.js --project=chrome-auth",
     "exercice7": "playwright test exercice7.spec.js --project=chrome",
-    "exercice8": "playwright test exercice7.spec.js --project=chrome",
+    "exercice8": "playwright test exercice8.spec.js --project=chrome",
     "example": "playwright test demo-todo-app.spec.js --project=test-examples"
   },
   "devDependencies": {

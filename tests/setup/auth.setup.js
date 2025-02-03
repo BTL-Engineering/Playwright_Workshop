@@ -5,8 +5,8 @@ const authFile = './.auth/user.json';
 
 setup('authenticate', async ({ page }) => {
   await page.goto(process.env.BACKOFFICE_URL || 'http://localhost:3000');
-  await page.getByPlaceholder('Type your email').fill('admin@mail.com');
-  await page.getByPlaceholder('Type the password').fill('secret');
+  await page.getByPlaceholder('Type your email').fill(process.env.ADMIN_EMAIL);
+  await page.getByPlaceholder('Type the password').fill(process.env.ADMIN_PASSWORD);
   await page.getByRole('button', { name: 'Login' }).click();
   const totp = generateTOTP() || '';
   await page.getByLabel('Character 1.').fill(totp[0]);
