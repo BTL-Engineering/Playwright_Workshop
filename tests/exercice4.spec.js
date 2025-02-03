@@ -1,21 +1,24 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const { chromium } = require('playwright');
-const path = require('path');
 
-test('Create browser with fake video and expect to image be downloaded', async ({}) => {
-  const browser = await chromium.launch({
-    args: ["--use-fake-device-for-media-stream",
-          "--use-fake-ui-for-media-stream",
-          `--use-file-for-fake-video-capture=${  path.join(__dirname,'..','assets','fcm.mjpeg')}`]
-  });
-  const page = await browser.newPage();
-  await page.goto('https://fcmv2-whitelabel.azureedge.net');
+test('Navigate to Skincare, select a product and click shop now and assert that the popup is open and Americas is visible', async ({ page }) => {
+  await page.goto('https://international.shiseido.co.jp/');
 
-  // Crete an event listener for the download event
+  // Get the link of Skincare menu and click it
+
+  // Get the link of All skincare and click it
+
+  // Expect page heading to contain SKINCARE
 
 
-  // Expect the download to be defined and the filename to be photo.png
+  // Get the link of Power Infusing Concentrate and click it
+
+  // Expect page heading to contain Power infusing concentrate
+
+  // click shop now
+  
+  // Expect popup to be visible
+  
+  // Expect Americas to be visible
 
 });
-

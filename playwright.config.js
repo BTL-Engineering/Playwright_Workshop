@@ -51,19 +51,16 @@ module.exports = defineConfig({
       name: 'setup', testMatch: /.*\.setup\.js/,
     },
     {
-      name: 'exercice1-2',
+      name: 'chrome',
       use: { ...devices['Desktop Chrome'] },
     },
     {
-      name: 'exercice3',
+      name: 'chrome-auth',
       use: { 
         ...devices['Desktop Chrome'],
         storageState: './.auth/user.json',
        },
       dependencies: ['setup'],
-    },
-    {
-      name: 'exercice4',
     },
     {
       name: 'test-examples',
