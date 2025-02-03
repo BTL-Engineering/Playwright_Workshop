@@ -8,6 +8,11 @@ The objective of this workshop is to show playwright basic operation: web testin
 - visual studio
 - Backoffice DEV user
 
+# Installation & run test: 
+- npm install
+- npm run test
+- npx show report
+
 # Exercises:  
 - Exercise 1:
 Expect the title to contain SHISEIDO https://international.shiseido.co.jp/
